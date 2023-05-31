@@ -1,0 +1,12 @@
+main {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr;
+}
+
+main > .container {
+	display: grid;
+	grid-template-columns: auto;
+	grid-template-rows: auto;
+	place-content: center;
+}
