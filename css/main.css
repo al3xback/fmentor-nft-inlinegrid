@@ -186,7 +186,7 @@ ol {
   display: inline-grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto auto;
-  vertical-align: middle;
+  width: 100%;
   max-width: 21.875em;
   padding: 1.5em;
   margin: 2.5em 0;

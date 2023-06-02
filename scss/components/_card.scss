@@ -6,7 +6,7 @@
 	display: inline-grid;
 	grid-template-columns: 1fr;
 	grid-template-rows: auto auto;
-	vertical-align: middle;
+	width: 100%;
 	max-width: func.em(350);
 	padding: func.em(24);
 	margin: func.em(40) 0;
