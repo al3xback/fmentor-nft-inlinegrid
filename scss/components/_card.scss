@@ -1,25 +1,27 @@
 @use '../abstracts/variables' as var;
 @use '../abstracts/functions' as func;
 
+.card__image,
+.card__content,
+.card__stats-list,
+.card__author {
+	display: grid;
+}
+
 .card {
 	display: inline-grid;
-	grid-template-columns: 1fr;
-	grid-template-rows: auto auto;
 	gap: func.em(24);
 	width: 100%;
 	max-width: func.em(350);
 	padding: func.em(24);
 	background-color: var.$color-dark-blue-2;
-	margin: func.em(40) 0;
+	margin: func.em(40) 0 func.em(20);
 	border-radius: 15px;
 	box-shadow: 0 25px 50px rgba(0, 0, 0, 0.1);
 }
 
 .card__image {
 	position: relative;
-	display: grid;
-	grid-template-columns: 1fr;
-	grid-template-rows: auto;
 	background-color: var.$color-soft-blue;
 	border-radius: 8px;
 	cursor: pointer;
@@ -48,12 +50,6 @@
 	border-radius: inherit;
 }
 
-.card__content {
-	display: grid;
-	grid-template-columns: 1fr;
-	grid-template-rows: repeat(4, auto);
-}
-
 .card__title {
 	margin-bottom: func.em(12, 22);
 }
@@ -63,7 +59,6 @@
 }
 
 .card__stats-list {
-	display: grid;
 	grid-template-columns: 1fr 1fr;
 	gap: func.em(16);
 }
@@ -86,7 +81,6 @@
 }
 
 .card__author {
-	display: grid;
 	grid-template-columns: auto 1fr;
 	align-items: center;
 	gap: func.em(16);
