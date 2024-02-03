@@ -8,8 +8,12 @@
 	display: grid;
 }
 
-.card {
+.card,
+.card__stats-list-item {
 	display: inline-grid;
+}
+
+.card {
 	gap: func.em(24);
 	width: 100%;
 	max-width: func.em(350);
@@ -64,7 +68,6 @@
 }
 
 .card__stats-list-item {
-	display: inline-grid;
 	grid-template-columns: min-content auto;
 	align-items: center;
 	gap: func.em(7.7);
