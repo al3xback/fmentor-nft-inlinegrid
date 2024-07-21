@@ -59,7 +59,7 @@
 }
 
 .card__desc {
-	margin-bottom: func.em(16, 18);
+	margin-bottom: func.em(18);
 }
 
 .card__stats-list {
@@ -110,6 +110,7 @@
 
 	.card__desc {
 		margin-bottom: func.em(24, 18);
+		font-size: func.em(18);
 	}
 
 	.card__stats-list-item,
